@@ -1,0 +1,121 @@
+.body {
+    font-family: sans-serif;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+
+#header_title {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4em;
+    height: 1em;
+    color: #0f80f0;
+}
+
+#header_logo {
+    margin-top: 0.4em;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 2px solid lightblue;
+    box-shadow: -7px 2px 17px blue;
+}
+
+#menu_container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.menu_item {
+    font-size: 2em;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+.gallery {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-areas: " aside aside step1 step1 step1" "aside aside photo photo photo";
+}
+
+#gallery_aside {
+    grid-area: aside;
+    font-size: 2em;
+    margin-left: 1.3em;
+}
+
+.step1 {
+    margin-top: 1em;
+    grid-area: step1;
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    margin-left: -150px;
+}
+
+.step1 img {
+    width: 25%;
+    margin-left: -4em;
+}
+
+.row {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 45% 45% 45%;
+    grid-template-areas: " photo photo photo";
+    gap: 3em;
+}
+
+.product {
+    border: 1px solid lightgrey;
+}
+
+.product__image {
+    max-width: 100%;
+}
+
+.product__brand {
+    text-transform: uppercase;
+    color: #5d5d5d;
+    text-align: center;
+}
+
+.product__bottom {
+    text-decoration: none;
+}
+
+.product__price {
+    font-weight: bold;
+    text-align: center;
+}
+
+#gallery_aside {
+    width: 30%;
+    padding: 1em;
+}
+
+.menu_gallery {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+/*Smartphone*/
+
+@media screen and (max-width:400px) {}
